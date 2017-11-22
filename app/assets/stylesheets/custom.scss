@@ -107,8 +107,8 @@ h1 {
 /* Buttons */
 
 .btn-sq-lg {
-  width: 250px !important;
-  height: 250px !important;
+  width: 200px !important;
+  height: 150px !important;
   font-size: 120%;
 }
 
@@ -117,41 +117,64 @@ h1 {
 }
 
 .btn-eviction, .btn-renters, .btn-shelter, .btn-issue, .btn-legal, .btn-location {
-  color: #fff;
-  border: 1px solid #fff;
+  color: #000;
+  border-radius: 10px;
+    background-color: rgba(26,125,215, .1);
+  box-shadow: 0px 15px 0px 0px rgba(26,125,215, .8);
+  border: 1px solid rgb(26,125,215);
+  margin: 1em;
+  transform: margin 1s;
+  &:active {
+    color: #000;
+    margin-bottom: -10px;
+  }
   &:hover {
-    border: 3px solid white;
-    font-weight: 800;
-    color: #fff;
+    color: #000;
   }
 }
 
+/*
 .btn-eviction {
-  background-color: #03275A;
+  background-color: rgba(3,39,90, .2);
+  box-shadow: 0px 15px 0px 0px rgba(3,39,90, .9);
+  border: 1px solid rgba(3,39,90, .9);
 }
 
 .btn-renters {
-  background-color: #1A7DD7;
+  background-color: rgba(26,125,215, .4);
+  box-shadow: 0px 15px 0px 0px rgb(26,125,215);
+  border: 1px solid rgb(26,125,215);
 }
 
 .btn-shelter {
-  background-color: #F2B809;
+  background-color: rgba(242,184,9, .5);
+  box-shadow: 0px 15px 0px 0px rgb(242,184,9);
+  border: 1px solid rgb(242,184,9);
 }
 
-.btn-issue {
-  background-color: #139EB2;
-}
+
 
 .btn-legal {
-  background-color: #F34605;
+  background-color: rgba(243,70,5, .5);
+  box-shadow: 0px 15px 0px 0px rgb(243,70,5);
+  border: 1px solid rgb(243,70,5);
 }
 
 .btn-location {
-  background-color: #07BD00;
+  background-color: rgba(7,189,0, .5);
+  box-shadow: 0px 15px 0px 0px rgb(7,189,0);
+  border: 1px solid rgb(7,189,0);
+
+}
+*/
+.btn-issue {
+  background-color: rgba(19,158,178, .2);
+  box-shadow: 0px 15px 0px 0px rgba(19,158,178, .8);
+  border: 1px solid rgb(19,158,178);
 }
 
-.glyphicon-file:before, .glyphicon-question-sign:before, .glyphicon-signal:before, .glyphicon-home:before, .glyphicon-map-marker:before, .glyphicon-pencil:before {
- font-size: 750%;
+.glyphicon-file:before, .glyphicon-question-sign:before, .glyphicon-signal:before, .glyphicon-home:before, .glyphicon-map-marker:before, .glyphicon-pencil:before, .glyphicon-hand-left:before {
+ font-size: 500%;
 }
 
 /* Panel */

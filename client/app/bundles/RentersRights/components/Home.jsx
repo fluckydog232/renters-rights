@@ -82,22 +82,31 @@ export default class Home extends React.Component {
               <div className=" col-md-12 text-center">
                 <p>
                   <a href="/eviction" className="btn btn-sq-lg btn-eviction">
-                    <br/><span className="glyphicon glyphicon-file"></span> <br/>I Am Getting Evicted
+                    <br/><span className="glyphicon glyphicon-home"></span> 
+                    <p>Eviction Process</p> 
+                  
                   </a>
                   <a href="/renters" className="btn btn-sq-lg btn-renters">
-                    <br/><span className="glyphicon glyphicon-signal"></span> <br/>My Rent Is Increasing
+                    <br/><span className="glyphicon glyphicon-signal"></span>
+                    <p>Rent Increases</p>
+                
                   </a>
                   <a href="/shelter" className="btn btn-sq-lg btn-shelter">
-                   <br/><span className="glyphicon glyphicon-home"></span> <br/>  I Need Shelter
+                   <br/><span className="glyphicon glyphicon-home"></span>
+                   <p>Shelters</p>
                   </a>
-                  <a href="#" className="btn btn-sq-lg btn-issue">
-                    <br/><span className="glyphicon glyphicon-pencil"></span> <br/>I Want To Report An Issue
-                  </a>
+                  
                   <a href="/renters" className="btn btn-sq-lg btn-location">
-                    <br/><span className="glyphicon glyphicon-map-marker"></span> <br/>Do I Live Within San Jose?
+                    <br/><span className="glyphicon glyphicon-map-marker"></span>
+                    <p>Where Am I?</p>
                   </a>
                   <a href="/legal-aid" className="btn btn-sq-lg btn-legal">
-                    <br/><span className="glyphicon glyphicon-question-sign"></span> <br/>I Need Legal Help
+                    <br/><span className="glyphicon glyphicon-question-sign"></span>
+                    <p>Legal Help</p>
+                  </a>
+                  <a href="#" className="btn btn-sq-lg btn-issue">
+                    <br/><span className="glyphicon glyphicon-pencil"></span>
+                    <p>Report an Issue</p>
                   </a>
                 </p>
               </div>
