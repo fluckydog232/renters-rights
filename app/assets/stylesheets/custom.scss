@@ -116,10 +116,13 @@ h1 {
   background-color: $morning-sky;
 }
 
+.btn {
+
+}
 .btn-eviction, .btn-renters, .btn-shelter, .btn-issue, .btn-legal, .btn-location {
   color: #000;
   border-radius: 10px;
-    background-color: rgba(26,125,215, .1);
+  background-color: rgba(26,125,215, .1);
   box-shadow: 0px 15px 0px 0px rgba(26,125,215, .8);
   border: 1px solid rgb(26,125,215);
   margin: 1em;
@@ -167,6 +170,37 @@ h1 {
 
 }
 */
+
+.icon-stack {
+    display: inline-block;
+    height: 2em;
+    line-height: 2em;
+    position: relative;
+    vertical-align: -35%;
+    width: 2em;
+}
+.icon-stack .icon-stack-base {
+    font-size: 2em;
+}
+.icon-stack [class^="icon-"], .icon-stack [class*=" icon-"] {
+    display: block;
+    font-size: 1em;
+    height: 100%;
+    line-height: inherit;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    left: -10px;
+    top: 3px;
+}
+.glyphicon-exclamation-sign
+{
+    color: #E8F2FC;
+    margin-top: -2px;
+}
+.stack-label {
+  margin-top: 16px;
+}
 .btn-issue {
   background-color: rgba(19,158,178, .2);
   box-shadow: 0px 15px 0px 0px rgba(19,158,178, .8);
@@ -174,7 +208,7 @@ h1 {
 }
 
 .glyphicon-file:before, .glyphicon-question-sign:before, .glyphicon-signal:before, .glyphicon-home:before, .glyphicon-map-marker:before, .glyphicon-pencil:before, .glyphicon-hand-left:before {
- font-size: 500%;
+ font-size: 3em;
 }
 
 /* Panel */

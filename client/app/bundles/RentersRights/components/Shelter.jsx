@@ -13,8 +13,10 @@ export default class Shelter extends React.Component {
         <div className="content-container">
           <div className="page-header">
              <h2>
-              Home<span className="glyphicon glyphicon-menu-right" aria-hidden="true"></span>Shelters 
+             Shelters 
              </h2>
+
+
           </div>
           <div className="row">
             <div className="col-md-9"> 

@@ -82,8 +82,13 @@ export default class Home extends React.Component {
               <div className=" col-md-12 text-center">
                 <p>
                   <a href="/eviction" className="btn btn-sq-lg btn-eviction">
-                    <br/><span className="glyphicon glyphicon-home"></span> 
-                    <p>Eviction Process</p> 
+                    <br/>
+                    <span className="icon-stack">
+                      <i className="glyphicon glyphicon-home icon-stack-base"></i>
+                      <i className="glyphicon glyphicon-exclamation-sign"></i>
+                    </span>
+                    
+                    <p className="stack-label">Eviction Process</p> 
                   
                   </a>
                   <a href="/renters" className="btn btn-sq-lg btn-renters">
