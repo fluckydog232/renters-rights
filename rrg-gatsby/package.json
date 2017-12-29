@@ -1,0 +1,28 @@
+{
+  "name": "renters-rights-guide",
+  "description": "San Jose Renter's Rights Guide",
+  "version": "1.0.0",
+  "author": "Yan-Yin Choy <yanyinchoy@gmail.com>",
+  "dependencies": {
+    "gatsby": "^1.9.145",
+    "gatsby-link": "^1.6.32",
+    "gatsby-plugin-react-helmet": "^1.0.8",
+    "gatsby-plugin-typography": "^1.7.10",
+    "glamorous": "^4.11.2",
+    "typography-theme-fairy-gates": "^0.15.11"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "main": "n/a",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "prettier": "^1.9.2"
+  }
+}
