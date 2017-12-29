@@ -8,6 +8,7 @@
     "gatsby-link": "^1.6.32",
     "gatsby-plugin-react-helmet": "^1.0.8",
     "gatsby-plugin-typography": "^1.7.10",
+    "gatsby-source-filesystem": "^1.5.11",
     "glamorous": "^4.11.2",
     "typography-theme-fairy-gates": "^0.15.11"
   },
