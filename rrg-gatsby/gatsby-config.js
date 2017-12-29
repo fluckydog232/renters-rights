@@ -3,6 +3,7 @@ module.exports = {
     title: `Renter's Rights Guide`,
   },
   plugins: [
+    `gatsby-transformer-remark`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
