@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Renter's Rights Guide`,
+    title: `San Jose Renter's Rights Guide`,
   },
   plugins: [
     `gatsby-transformer-remark`,
