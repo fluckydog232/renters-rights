@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+require 'zillow'
 
 class RentersRightsController < ApplicationController
   layout "renters_rights"
