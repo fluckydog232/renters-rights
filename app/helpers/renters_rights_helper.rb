@@ -4,9 +4,10 @@ module RentersRightsHelper
     url="http://www.zillow.com/webservice/GetDeepSearchResults.htm?zws-id=#{key}&address=#{address}&citystatezip=#{citystatezip}"
     puts url
     page=HTTParty.get(url)
-    binding.pry
+
     if (page.parsed_response["searchresults"]["message"]["code"] == "0")
       # if it only returns one address, do this 
+      binding.pry
       if page.parsed_response["searchresults"]["response"]["results"]["result"]["localRealEstate"]["region"]["type"]
         type=page.parsed_response["searchresults"]["response"]["results"]["result"]["localRealEstate"]["region"]["type"]
         useCode=page.parsed_response["searchresults"]["response"]["results"]["result"]["useCode"]

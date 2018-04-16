@@ -44,16 +44,17 @@ class RentersRightsController < ApplicationController
   def address_check_post
     puts "city :" +  params[:city]
     puts "Address: " + params[:street]
-    puts "Apt: + params[:apt]"
-    if params[:apt] # if the apt value exists, include it in the address
-      address = params[:street] + "Apt" + params[:apt]
+    puts "Apt: " + params[:apt]
+    full_address=""
+    if params[:apt]=="" # if the apt value exists, include it in the address
+      full_address = params[:street]
     else 
-      address = params[:street]
+      full_address = params[:street] + " Apt" + params[:apt]
     end 
     citystatezip=params[:city]+"%2C"+params[:state]
     puts "citystatezip" + citystatezip
 
-    info=getInfo(address,citystatezip)
+    info=getInfo(full_address,citystatezip)
     # [type,useCode,yearBuilt, street]
     if params[:city].strip.upcase == "SAN JOSE" && params[:street] == info[3]
       case info[0] # type
