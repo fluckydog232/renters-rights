@@ -56,10 +56,11 @@ class RentersRightsController < ApplicationController
 
     info=getInfo(full_address,citystatezip)
     # [type,useCode,yearBuilt, street]
-    if params[:city].strip.upcase == "SAN JOSE" && params[:street] == info[3]
+    if (params[:city].strip.upcase == "SAN JOSE") && (info[3].upcase.include? params[:street])
       case info[0] # type
         when "neighborhood" # when the property is a part of incorporated City of San Jose neighborhood
           if info[2]<=1979 #if the property is built before (or the year of 1979).
+            binding.pry
             # Note that we don't get specific details if the property ws built before September 7, 1979
               case info[1] # useCode
                 when "MultiFamily5Plus" # applies to ARO, TPO and EAO
